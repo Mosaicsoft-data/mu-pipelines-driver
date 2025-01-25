@@ -1,0 +1,16 @@
+{
+    "connections":[
+        {
+            "name": "postgres_test",
+            "type": "postgres",
+            "connection_details": {
+                "host":"test_host",
+                "database": "test_database",
+                "port": "1234",
+                "username": "test_username",
+                "password": "test_password",
+                "certificate_path": "test_cert_path"
+            }
+        }
+    ]
+}

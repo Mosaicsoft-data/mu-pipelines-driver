@@ -1,0 +1,18 @@
+[
+    {
+        "execution": [
+            {
+                "type": "CSVReadCommand",
+                "data": [{ "a": "a", "b": "bee", "c": 123 }]
+            }
+        ],
+        "destination": [
+            {
+                "type": "jdbc",
+                "_connection_details": "should match type in connection properties",
+                "connection_details": "postgres_test",
+                "table_name": "contact"
+            }    
+        ]
+    }
+]

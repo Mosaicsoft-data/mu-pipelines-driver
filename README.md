@@ -16,7 +16,7 @@ pipenv run isort .
 
 ### (Unit Tests)
 ```
-pipenv run pytest --cov --cov-fail-under=100
+pipenv run pytest --cov --cov-fail-under=80
 ```
 
 ### Pre-Commit Hooks

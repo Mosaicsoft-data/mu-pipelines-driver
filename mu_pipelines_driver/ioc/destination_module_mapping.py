@@ -18,6 +18,27 @@ DESTINATION_MODULE_MAPPING: list[DestinationModuleMappingItem] = [
         "module_path": "test.mock.save_to_table.save_to_table",
         "class_name": "SaveToTable",
     },
+    {
+        "type": "jdbc-postgres-spark",
+        "module_path": "mu_pipelines_destination_spark.save_to_table.save_to_table",
+        "class_name": "SaveToTable",
+    },
+    {
+        "type": "csv-spark",
+        "module_path": "mu_pipelines_destination_spark.save_to_csv.save_to_csv",
+        "class_name": "SaveToCSV",
+    },
+    {
+        "type": "print-spark",
+        "module_path": "mu_pipelines_destination_spark.print.print",
+        "class_name": "PrintDestination",
+    },
+    {
+        "type": "table-spark",
+        "module_path": "mu_pipelines_destination_spark.save_to_table.save_to_table",
+        "class_name": "SaveToTable",
+        "intialize_context_module": "mu_pipelines_destination_spark.context",
+    },
 ]
 
 

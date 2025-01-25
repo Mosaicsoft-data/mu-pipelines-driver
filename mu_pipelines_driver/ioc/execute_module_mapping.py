@@ -16,6 +16,12 @@ EXECUTE_MODULE_MAPPING: list[ExecuteModuleMappingItem] = [
         "module_path": "test.mock.load_csv.load_csv",
         "class_name": "LoadCSV",
     },
+    {
+        "type": "csvreadcommand-spark",
+        "module_path": "mu_pipelines_execute_spark.load_csv.load_csv",
+        "class_name": "LoadCSV",
+        "intialize_context_module": "mu_pipelines_execute_spark.context",
+    },
 ]
 
 
