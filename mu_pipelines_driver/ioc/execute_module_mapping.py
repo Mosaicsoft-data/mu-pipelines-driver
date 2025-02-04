@@ -17,6 +17,12 @@ EXECUTE_MODULE_MAPPING: list[ExecuteModuleMappingItem] = [
         "class_name": "LoadCSV",
     },
     {
+        "type": "kafkareadcommand-spark",
+        "module_path": "mu_pipelines_execute_spark.load_kafka.load_kafka",
+        "class_name": "LoadKafka",
+        "intialize_context_module": "mu_pipelines_execute_spark.context",
+    }, 
+    {
         "type": "csvreadcommand-spark",
         "module_path": "mu_pipelines_execute_spark.load_csv.load_csv",
         "class_name": "LoadCSV",
