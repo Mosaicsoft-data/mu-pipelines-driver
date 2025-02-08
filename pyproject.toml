@@ -21,6 +21,7 @@ dependencies = [
 dynamic = ["version"]
 
 [project.optional-dependencies]
+spark = ["mu-pipelines-execute-spark", "mu-pipelines-destination-spark"]
 
 [project.scripts]
 
