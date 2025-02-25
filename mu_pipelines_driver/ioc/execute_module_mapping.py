@@ -22,6 +22,12 @@ EXECUTE_MODULE_MAPPING: list[ExecuteModuleMappingItem] = [
         "class_name": "LoadCSV",
         "intialize_context_module": "mu_pipelines_execute_spark.context",
     },
+    {
+        "type": "ingestcsv-spark",
+        "module_path": "mu_pipelines_execute_spark.ingest_csv.ingest_csv",
+        "class_name": "IngestCSV",
+        "intialize_context_module": "mu_pipelines_execute_spark.context",
+    },
 ]
 
 

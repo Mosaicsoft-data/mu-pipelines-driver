@@ -27,6 +27,7 @@ DESTINATION_MODULE_MAPPING: list[DestinationModuleMappingItem] = [
         "type": "csv-spark",
         "module_path": "mu_pipelines_destination_spark.save_to_csv.save_to_csv",
         "class_name": "SaveToCSV",
+        "intialize_context_module": "mu_pipelines_destination_spark.context",
     },
     {
         "type": "print-spark",
@@ -37,6 +38,18 @@ DESTINATION_MODULE_MAPPING: list[DestinationModuleMappingItem] = [
         "type": "table-spark",
         "module_path": "mu_pipelines_destination_spark.save_to_table.save_to_table",
         "class_name": "SaveToTable",
+        "intialize_context_module": "mu_pipelines_destination_spark.context",
+    },
+    {
+        "type": "destinationcsv-spark",
+        "module_path": "mu_pipelines_destination_spark.destination_csv.destination_csv",
+        "class_name": "DestinationCSV",
+        "intialize_context_module": "mu_pipelines_destination_spark.context",
+    },
+    {
+        "type": "destinationdefaultcatalog-spark",
+        "module_path": "mu_pipelines_destination_spark.destination_default_catalog.destination_default_catalog",
+        "class_name": "DestinationDefaultCatalog",
         "intialize_context_module": "mu_pipelines_destination_spark.context",
     },
 ]
