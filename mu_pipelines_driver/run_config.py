@@ -1,3 +1,6 @@
+from mu_pipelines_configuration_provider.diy_configuration_provider import (
+    DIYConfigurationProvider,
+)
 from mu_pipelines_interfaces.config_types.connection_properties import (
     ConnectionProperties,
 )
@@ -7,9 +10,6 @@ from mu_pipelines_interfaces.config_types.global_properties.global_properties im
 from mu_pipelines_interfaces.config_types.job_config import JobConfigItem
 from mu_pipelines_interfaces.configuration_provider import ConfigurationProvider
 
-from mu_pipelines_driver.config.diy_configuration_provider import (
-    DIYConfigurationProvider,
-)
 from mu_pipelines_driver.ioc.ioc_container import IOCContainer
 from mu_pipelines_driver.job_driver import job_driver
 

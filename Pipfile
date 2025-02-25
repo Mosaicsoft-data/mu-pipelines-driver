@@ -12,6 +12,7 @@ verify_ssl = true
 python_version = "3.12"
 
 [packages]
+mu-pipelines-configuration-provider = ">=0.1.0"
 mu-pipelines-interfaces = ">=0.1.4"
 
 [dev-packages]

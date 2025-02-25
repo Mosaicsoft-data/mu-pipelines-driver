@@ -1,4 +1,7 @@
-from mu_pipelines_driver.config.configuration_factory import configuration_factory
+from mu_pipelines_configuration_provider.configuration_factory import (
+    configuration_factory,
+)
+
 from mu_pipelines_driver.run_config import run_config_from_provider
 
 

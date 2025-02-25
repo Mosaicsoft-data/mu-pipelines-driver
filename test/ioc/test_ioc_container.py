@@ -1,12 +1,12 @@
 from test.mock.load_csv.load_csv import LoadCSV
 from test.mock.save_to_table.save_to_table import SaveToTable
 
+from mu_pipelines_configuration_provider.absolute_configuration_provider import (
+    AbsoluteConfigurationProvider,
+)
 from mu_pipelines_interfaces.config_types.job_config import JobConfigItem
 from mu_pipelines_interfaces.configuration_provider import ConfigurationProvider
 
-from mu_pipelines_driver.config.absolute_configuration_provider import (
-    AbsoluteConfigurationProvider,
-)
 from mu_pipelines_driver.ioc.ioc_container import IOCContainer
 
 
