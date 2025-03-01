@@ -28,6 +28,12 @@ EXECUTE_MODULE_MAPPING: list[ExecuteModuleMappingItem] = [
         "class_name": "IngestCSV",
         "intialize_context_module": "mu_pipelines_execute_spark.context",
     },
+    {
+        "type": "transformsql-spark",
+        "module_path": "mu_pipelines_execute_spark.transform_sql.transform_sql",
+        "class_name": "TransformSQL",
+        "intialize_context_module": "mu_pipelines_execute_spark.context",
+    },
 ]
 
 
