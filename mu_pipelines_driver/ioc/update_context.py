@@ -1,6 +1,8 @@
 from importlib import import_module
 from typing import Callable, TypeVar
 
+from mu_pipelines_interfaces.context import Context
+
 from mu_pipelines_driver.ioc.import_mapped_class import ClassModuleMappingItem
 
 TFuncType = TypeVar("TFuncType")
@@ -12,7 +14,7 @@ def import_function(
     return getattr(import_module(module_path), function_name)
 
 
-def update_context(mapping: ClassModuleMappingItem, existing_context: dict) -> None:
+def update_context(mapping: ClassModuleMappingItem, existing_context: Context) -> None:
     if "intialize_context_module" in mapping:
         import_function(
             mapping["intialize_context_module"],

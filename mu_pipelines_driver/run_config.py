@@ -8,6 +8,7 @@ from mu_pipelines_interfaces.config_types.global_properties.global_properties im
     GlobalProperties,
 )
 from mu_pipelines_interfaces.config_types.job_config import JobConfigItem
+from mu_pipelines_interfaces.config_types.secrets.secrets_config import SecretsConfig
 from mu_pipelines_interfaces.configuration_provider import ConfigurationProvider
 
 from mu_pipelines_driver.ioc.ioc_container import IOCContainer
@@ -28,8 +29,9 @@ def run_config(
     job_config: list[JobConfigItem],
     global_properties: GlobalProperties,
     connection_config: ConnectionProperties,
+    secrets_config: SecretsConfig,
 ) -> object | None:
     config_provider: ConfigurationProvider = DIYConfigurationProvider(
-        job_config, global_properties, connection_config
+        job_config, global_properties, connection_config, secrets_config
     )
     return run_config_from_provider(config_provider)
